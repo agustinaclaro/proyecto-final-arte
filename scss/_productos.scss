@@ -1,0 +1,25 @@
+.products{
+    background-color:#D9D1B8;
+
+    .carousel-caption h5{
+        color: black;
+    p{
+         font-weight: 400;
+        }
+}
+}
+
+.containers-products{
+    background-color:#D9D1B8;
+    .porductscard{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: black;
+        .card{
+            margin: 30px 30px 30px 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }   
+    }  
+}   

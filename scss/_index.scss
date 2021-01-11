@@ -1,0 +1,22 @@
+
+.main-site{
+    background: url("../imagenes/pinceles.jpg");
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+.booscard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .card{
+        margin: 0 30px 0 30px;
+        text-align: center;
+    }
+}

@@ -53,8 +53,6 @@ a{
 /* boton index*/
 .btn-primary{
   border: none;
-  
-  
 }
 /*text botones*/
 button a{
@@ -166,8 +164,8 @@ h2, h3, h4 {
         justify-content: center;
         list-style-type: none;
       li{
+        a{ text-decoration: none;}
         i{
-          
             font-size: 30px;
             padding: 10px 5px ;
             color: #000;
@@ -178,7 +176,6 @@ h2, h3, h4 {
     
     }
 }
-
 
   p.copyright {
   text-align: center;

@@ -152,37 +152,59 @@ h2, h3, h4 {
 
 
 
-/*footer*/
-.footer_global{
-  background-color:rgb(242, 235, 233) ;
-    margin-top: 60px;
-    padding-top: 1px;
-    padding-bottom: 15px;
-    .footer_social_icons{
-      ul{
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-      li{
-        a{ text-decoration: none;}
-        i{  
-          font-size: 30px;
-            padding: 40px 5px ;
-            color: #000;
-            text-decoration: none;
-          }
+$social:
+'icon-facebook-square', 
+'icon-instagram', 
+'icon-whatsapp';
+
+@each $social_icons in $social{
+.#{$social_icons}
+    :hover{
+        @if $social_icons== 'icon-facebook-square'{
+            color:blue;
         }
-      }
-    
-    }
+         @if $social_icons== 'icon-instagram'{
+           color:violet;
+        }
+         @if $social_icons=='icon-whatsapp' {
+           color:green;
+        }
+      }     
 }
 
-  p.copyright {
-  text-align: center;
-  color:  #000;
+/*footer*/
+.footer_global{
+background-color:rgb(242, 235, 233) ;
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  .footer_social_icons{
+    ul{
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+    li{
+      
+      a{ text-decoration: none;}
+      i{  
+          font-size: 30px;
+          padding: 40px 5px ;
+          color: #000;
+          text-decoration: none;
+        }
+      }
+      }
+    }
+  
   }
 
-  p.contacto{
-  font-size: 0.5rem;
-  text-align: right;
-  }
+p.copyright {
+text-align: center;
+color:  #000;
+}
+
+p.contacto{
+font-size: 0.5rem;
+text-align: right;
+}
+  

@@ -18,5 +18,11 @@
     .card{
         margin: 50px 30px 40px 30px;
         text-align: center;
+        .card-body{
+            .btn-primary{
+                background-color: #D9AF8B;
+                border:none ;
+            }
+        }
     }
 }

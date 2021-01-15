@@ -10,35 +10,46 @@
     }
 }
 
-.clases{
+.clases_seminarios{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    
+    .clase_card{
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        border-radius: 15px;
+        border: 0.5px solid black;
+        margin: 0 15px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        i{
+            display: inline-block;
+            transform: rotate(0);
+            transition: ease-out 1s;
+            color:#D9AF8B;
+            font-size: 2rem;
+             i:hover{
+            transform: rotate(360deg);
+            transition: ease-out 1s;
+                }
+            }
+        
     p{
-    text-decoration: none;
-    }
-}
-.clase{
-    text-align: center;
-    padding: 30px 20px;
-    border: 0.5px solid black;
-    margin: 0 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    i:hover{
-    transform: rotate(360deg);
-    transition: ease-out 1s;
+        text-decoration: none;
         }
-    i{
-    display: inline-block;
-    transform: rotate(0);
-    transition: ease-out 1s;
-    color:#D9AF8B;
-    font-size: 2rem;
+    .btn-light{
+        background-color:rgb(124, 89, 80);
+        border:none;
+        a{
+            text-decoration: none;
+            a:hover{
+            color: darkred;
+        }
+        }
     }
 }
+}
+
 .galeria-taller{
     display:flex;
     grid-template-rows: 250px 250px 250px 250px;

@@ -4,7 +4,7 @@
     width: 50%;
     }
  p {
-    margin: 0 80px;
+    margin: 0 80px 40px 80px;
     text-align: center;  
  } 
 }
@@ -17,6 +17,8 @@
     justify-content: center;
     align-items: center;
     background-color: #D7D9D9; 
+    padding: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
      img {
     width: 100%;
     max-width: 250px;

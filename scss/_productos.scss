@@ -1,5 +1,12 @@
 .products{
     background-color:#D9D1B8;
+    .carousel-item{
+        width: 100%;
+        max-width: 50%;
+        height: auto;
+        max-height: 50%;
+        align-items: center;
+    }
 
     .carousel-caption h5{
         color: black;

@@ -1,15 +1,19 @@
 
 .main-site{
-    background: url("../imagenes/pinceles.jpg");
-    background-position: center;
+   img{
+    min-height: 100vh;
     background-size: cover;
-    max-width: 100%;
-    height: 100vh;
-    min-height: 100%;
-    margin-left: 2px;
-    margin-right: 2px;
-
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  @include breakpoint(xs){
+    .img{
+    min-height: 50vh;
+    margin: 0;
+  }
+  }
 }
+
 .booscard{
     display: flex;
     flex-direction: row;
@@ -24,5 +28,8 @@
                 border:none ;
             }
         }
+    }
+    @include breakpoint(xs){
+      flex-direction: column;
     }
 }

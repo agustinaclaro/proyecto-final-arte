@@ -1,24 +1,43 @@
-
-.main-velas{
-    display:flex;
- img{
-    width: 50%;
-    } 
- p{
-    margin: 0 80px;
-    text-align: justify;
+.main-velas {
+    display: flex;
+    img {
+        width: 50%;
+    }
+    p {
+        margin: 0 80px;
+        text-align: justify;
+    }
+    @include breakpoint(xs) {
+        img {
+            width: 70%;
+            align-items: center;
+            margin: 0 30px 30px 30px;
+        }
+        p {
+            margin: 0 30px 20px 30px;
+        }
     }
 }
-.candelcard{
+.candelcard {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    .card{
-        margin: 30px 30px 30px 30px;
+    .card {
+        margin: 10px 20px 10px 20px;
         text-align: center;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         .card-text {
             font-size: 1rem;
+            @include breakpoint(xs) {
+                font-size: 0.7rem;
+            }
+         }
+        }
+        @include breakpoint(xs) {
+            flex-direction: column;
+            width: 10rem;
+            
         }
     }
-}
+
+

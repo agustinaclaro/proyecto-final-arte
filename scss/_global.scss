@@ -1,14 +1,15 @@
 :root {
   font-size: $font-size-base;
 }
-html, body {
-  background-color:$white;
+html,
+body {
+  background-color: $white;
   color: $black;
-  font-family:$main-font;
-  font-size: .875rem;
-  height: 100%;
+  font-family: $main-font;
+  font-size: 0.875rem;
+  min-height: 100%;
   margin: 0;
-    h1{
+  h1 {
     color: rgb(0, 0, 0);
     font-size: 2rem;
     text-align: center;
@@ -16,11 +17,11 @@ html, body {
     letter-spacing: 2px;
     margin: 0 auto;
     padding-top: 15px;
-    }
   }
+}
 
 /*hipervinculos*/
-a{
+a {
   text-decoration: none;
 }
 
@@ -35,7 +36,7 @@ a{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color:#5f9674;
+  background-color: #5f9674;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -45,60 +46,93 @@ a{
   background-color: darkred;
 }
 /* boton index*/
-.btn-primary{
+.btn-primary {
   border: none;
 }
 /*text botones*/
-button a{
-  border-style: solid , #F2ECD8;
+button a {
+  border-style: solid, #f2ecd8;
   color: whitesmoke;
   font-size: small;
   font-weight: 600;
   text-decoration: none;
 }
 
-/*header*/
-.header_global{
-  display: flex;
-  flex-direction: column;
-  background-color:#F2EBE9;
-  
-  .header_nav{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;  
-    ul{
-      list-style-type: none;
-      overflow: hidden;
-      display: flex;
-      text-decoration: none; 
-      li{
-        display: inline-block;
-        padding: 8px;
-        text-decoration: none;  
-        font-size: 0.8rem;
-        a{ 
-          color: #000;
-          font-weight: 600;
-        a:hover{
-          color: rgb(51, 71, 52);
-        font-weight: 900;
-        
-        }
-      }
-      } 
+.navbar{
+  height: 50px;
+  max-height: 50px;
+  background-color:#f2ebe9;
+  padding: 0;
+  margin: 0;
+}
+.logo_site{
+    height: 6rem;
+
+  }
+.navbar-text{
+  text-align: center;
+  font-weight: 500;
+}
+
+.nav-item {
+  .nav-link {
+    font-size: 0.8rem;
+    font-family: $main-font;
+    color: #000;
+    font-weight: 600;
+    &:hover {
+      color: rgb(51, 71, 52);
+      font-weight: 900;
     }
   }
 }
-.header_logo{
-  color: #000;
-  :hover{
-    color: darkred;
-  }
+
+/*.header_global {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2ebe9;
+      .header_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        ul {
+          list-style-type: none;
+          overflow: hidden;
+          list-style-type: none;
+          overflow: hidden;
+          display: flex;
+          text-decoration: none;
+          text-decoration: none;
+          li {
+            display: inline-block;
+            padding: 8px;
+            text-decoration: none;
+            font-size: 0.8rem;
+            a {
+              color: #000;
+              font-weight: 600;
+              a:hover {
+                color: rgb(51, 71, 52);
+                font-weight: 900;
+              }
+            }
+          }
+        }
+      }
+    }
+.header_logo {
+      img{
+        height: 8rem;
+        margin: 0;
+        img:hover {
+          color: darkred;
+} 
 }
+}
+
 /*H1,H2,H3*/
-h1{
+h1 {
   color: rgb(0, 0, 0);
   font-size: 2rem;
   text-align: center;
@@ -107,7 +141,9 @@ h1{
   margin: 0 auto;
   padding-top: 15px;
 }
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 500;
@@ -117,88 +153,85 @@ h2, h3, h4 {
 }
 
 /*titulos*/
-.top-title{
+.top-title {
   align-items: center;
   font-size: 1rem;
 }
-.titulos{
-    font-family:$main-font;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 40px;
-    position:relative;
+.titulos {
+  font-family: $main-font;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  position: relative;
 
-   &:before{
-      content:"";
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 40px;
-      height: 1px;
-      background-color: #000;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 1px;
+    background-color: #000;
   }
 }
-
-
-
-$social:
-'icon-facebook-square', 
-'icon-instagram', 
-'icon-whatsapp';
-
-@each $social_icons in $social{
-.#{$social_icons}
-    :hover{
-        @if $social_icons== 'icon-facebook-square'{
-            color:blue;
-        }
-         @if $social_icons== 'icon-instagram'{
-           color:violet;
-        }
-         @if $social_icons=='icon-whatsapp' {
-           color:green;
-        }
-      }     
-}
-
 /*footer*/
-.footer_global{
-background-color:rgb(242, 235, 233) ;
+.footer_global {
+  background-color: rgb(242, 235, 233);
   margin-top: 60px;
   padding-top: 30px;
   padding-bottom: 15px;
-  .footer_social_icons{
-    ul{
+  .footer_social_icons {
+    ul {
       display: flex;
       justify-content: center;
       list-style-type: none;
-    li{
-      
-      a{ text-decoration: none;}
-      i{  
-          font-size: 30px;
-          padding: 40px 5px ;
-          color: #000;
+      li {
+        a {
           text-decoration: none;
         }
-      }
+        i {
+          font-size: 30px;
+          padding: 40px 5px;
+          color: #000;
+          text-decoration: none;
+          $social: "icon-facebook-square", "icon-instagram", "icon-whatsapp";
+
+          @each $social_icons in $social {
+            &.#{$social_icons}:hover {
+              @if $social_icons== "icon-facebook-square" {
+                color: blue;
+              }
+              @if $social_icons== "icon-instagram" {
+                color: purple;
+              }
+              @if $social_icons== "icon-whatsapp" {
+                color: green;
+              }
+            }
+          }
+        }
       }
     }
-  
   }
+}
+.contacto_redes {
+  color: black;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
 
 p.copyright {
-text-align: center;
-color:  #000;
+  text-align: center;
+  color: #000;
 }
 
-p.contacto{
-font-size: 0.5rem;
-text-align: right;
+p.contacto {
+  font-size: 0.5rem;
+  text-align: right;
 }
-  

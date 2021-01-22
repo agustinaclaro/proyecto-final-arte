@@ -1,32 +1,22 @@
-.products{
-    background-color:#D9D1B8;
-    .carousel-item{
+.carousel{
+    width: 70%;
+    margin:auto;
+    @include breakpoint(sm){
         width: 100%;
-        max-width: 50%;
-        height: auto;
-        max-height: 50%;
-        align-items: center;
     }
 
-    .carousel-caption h5{
-        color: black;
-    p{
-         font-weight: 400;
-        }
-}
+    &-img{
+        width:100%;
+       
+    }
 }
 
-.containers-products{
-    background-color:#D9D1B8;
-    .porductscard{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        border: black;
-        .card{
-            margin: 30px 30px 30px 30px;
-            text-align: center;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }   
-    }  
-}   
+.card-group{
+   
+    justify-content: space-around;
+    .card{
+        margin: 30px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }   
+}  

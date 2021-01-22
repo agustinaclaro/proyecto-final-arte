@@ -57,17 +57,51 @@ button a {
   font-weight: 600;
   text-decoration: none;
 }
-
+/*header*/
 .navbar{
+  background-color:#f2ebe9 ;
+  .nav-item {
+    .nav-link {
+      font-size: 0.8rem;
+      font-family: $main-font;
+      color: #000;
+      font-weight: 600;
+      &:hover {
+        color: rgb(51, 71, 52);
+        font-weight: 900;
+  
+    .navbar-text{
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      font-weight: 500;
+    
+    }
+  }
+}
+}
+}
+
+.logo_site{
+  height: 6rem;
+}
+/*.navbar{
   height: 50px;
   max-height: 50px;
   background-color:#f2ebe9;
   padding: 0;
   margin: 0;
+  position: fixed
+
+}
+
+.navbar-toggle
+@include breakpoint(md,xs) {
+  align-items: flex-start;
+
 }
 .logo_site{
     height: 6rem;
-
   }
 .navbar-text{
   text-align: center;
@@ -178,6 +212,11 @@ h4 {
     height: 1px;
     background-color: #000;
   }
+}
+/*productos */
+.section-bg{
+  background-color:#D9D1B8;
+
 }
 /*footer*/
 .footer_global {

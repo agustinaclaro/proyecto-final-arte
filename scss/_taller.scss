@@ -8,6 +8,16 @@
     margin: 40px 80px;
     text-align: center;   
     }
+    @include breakpoint(xs) {
+        img {
+            width: 70%;
+            position: end;
+            margin: 0 30px 30px 30px;
+        }
+        p {
+            margin: 0 30px 20px 30px;
+        }
+}
 }
 
 .clases_seminarios{

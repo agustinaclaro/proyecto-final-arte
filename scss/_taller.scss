@@ -2,7 +2,8 @@
     display: flex;
     background-color:#F2ECD8;
     img{
-    width: 40%;
+    width: 60%;
+    padding: 10px 0;
     }
    p {
     margin: 40px 80px;
@@ -11,13 +12,18 @@
     @include breakpoint(xs) {
         img {
             width: 70%;
-            position: end;
             margin: 0 30px 30px 30px;
         }
         p {
             margin: 0 30px 20px 30px;
         }
 }
+}
+.seminarios-taller{
+    h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
 
 .clases_seminarios{
@@ -30,8 +36,15 @@
         padding: 30px 20px;
         border-radius: 15px;
         border: 0.5px solid black;
-        margin: 0 15px;
+        margin: 10px 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        @include breakpoint(xs){
+            border-radius: 7px;
+            font-size: 1rem;
+            padding: 10px 5px;
+          }
+        
+    }
         i{
             display: inline-block;
             transform: rotate(0);
@@ -57,9 +70,14 @@
         }
         }
     }
+    @include breakpoint(sm){
+        flex-direction: column;
+      }
+    @include breakpoint(xs){
+        flex-direction: column;
+      }
+    
 }
-}
-
 .galeria-taller{
     display:flex;
     grid-template-rows: 250px 250px 250px 250px;
@@ -67,7 +85,7 @@
     justify-content: space-around;
     align-items:center;
     background-color:#D7D9D9;
-
+    margin-top: 20px;
      img{
     width: 100%;
     max-width: 250px;
@@ -78,5 +96,9 @@
     transform: scale(1.5);
     transition: ease-out 0.4s;
     z-index: 9;
+    }
+    @include breakpoint(xs){
+        flex-direction: column;
+        grid-template-columns: 250px;
     }
 }

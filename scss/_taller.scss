@@ -9,6 +9,13 @@
     margin: 40px 80px;
     text-align: center;   
     }
+    @include breakpoint(sm) {
+        img {
+            align-items: center;
+            margin: 0 10px 10px 20px;
+            padding: 10px ;
+        }
+    }
     @include breakpoint(xs) {
         img {
             width: 70%;
@@ -38,6 +45,11 @@
         border: 0.5px solid black;
         margin: 10px 15px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        @include breakpoint(sm){
+            border-radius: 10px;
+            font-size: 1rem;
+            padding: 10px 5px;
+          }
         @include breakpoint(xs){
             border-radius: 7px;
             font-size: 1rem;
@@ -71,7 +83,9 @@
         }
     }
     @include breakpoint(sm){
-        flex-direction: column;
+        flex-direction:column;
+        align-items: center;
+       
       }
     @include breakpoint(xs){
         flex-direction: column;

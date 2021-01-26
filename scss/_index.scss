@@ -3,14 +3,11 @@
    img{
    width: 100%;
   }
+  margin-bottom: 30px;
 }
 
-.booscard{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    .card{
+.card{
+      justify-content: space-around;
         margin: 50px 30px 40px 30px;
         text-align: center;
         .card-body{
@@ -19,7 +16,7 @@
                 border:none ;
             }
         }
-    }
+    
 
     @include breakpoint(sm){
       flex-direction: column;
@@ -27,4 +24,5 @@
     @include breakpoint(xs){
       flex-direction: column;
     }
-}
+  }
+
